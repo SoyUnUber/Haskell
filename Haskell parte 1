@@ -1,0 +1,54 @@
+Que es programacion funcional? 
+
+*La programacion funcional puede verse como un estilo de programacion donde el metodo basico de computacion es la aplicacion de funciones a argumentos. 
+
+*Un lenguaje de programacion funcional es aquel que soporta e incentiva el uso del estilo funcional.
+
+*Para mostrarlo veremos dos formas de hacer un programa que sume todos los numeros (naturales) entre 1 y algun valor pasado como argumento. 
+
+// La aproximacion clasica //
+
+*Si se escribiera un pseudocodigo para resolver este problema se trendria algo como lo siguiente
+
+count := 0           //Definimos una variable (Contador)que es igual a 0
+total := 0          // Total Palabra transparente 
+repeat             //Repetimos hasta que 
+     count := count + 1 
+     total := total + count
+until count = n    // Repetimos hasta que el conteo sea igual a N (count = n)
+
+{Este codigo que tiene unas 6 Lineas la podemos reducir a UNA... Y sigue siendo legible}
+Esta aproximacion es llamada imperativa porque el metodo de computacion se basa en el almacenamiento y modificacion de valores.
+Es decir, Para hacerlo los lenguajes deben dar instrucciones que representen los cambios de estado. {Son instrucciones que van modificando una maquina de estado en este caso la memoria, modificamos el valor de la memoria. Aca vamos a modificar el valor de la memoria Ejemplo COUNT Y TOTAL. 
+
+{Una caracteristica que tiene Haskell es que no existen Variables, vemos que COUNT y TOTAL tienen que ser variables porque van a ir cambiando su valor mientras que en Haskell no existe tal posibilidad de cambiar valores osea una vez que se le de valor a algo tiene ese valor para siempre}
+
+// La aproximacion de Haskell //
+
+*Usando Haskell esto se lograria usando dos FUNCIONES predefinidas:
+1: [a..b] usada para producir una lista de numeros entre los valores A y B. //Genera una lista de numeros que va de A a B invluyendolos. a+1 a+2 a+3 a+etc -> hasta llegar a B
+2: SUM que suma a todos los elementos de una lista. //Nosotros le damos una lista con elementos y lo que hace es sumar todos sus componentes, si tenemos una lista con 111(una lista con 3 unos) aplica suma a esa lista y dara 3. 
+
+Si estas dos cosas la juntaramos nos daria esto 
+
+*La funcion se reduce a sum [1..5] //Del 1 a 5 o N.
+*Ejemplo de aplicacion:
+sum [1..5]
+osea 
+sum [1,2,3,4,5]
+1+2+3+4+5
+15
+
+// Trabajando con programacion funcional //
+
+*Los lenguajes de programacion imperativos muchas veces soportan estas caracteristicas.
+    *Pero no fomentan el uso del estilo funcional.
+*Muchos lenguajes no soportan ciertas caracteristicas:
+    *almacenar funciones en listas.
+    *hacer que funciones tomen funciones y retornen funciones.
+*A lo largo del curso se veran formas de aprovechar estas caracteristicas.
+
+
+
+
+

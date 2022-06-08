@@ -1,0 +1,7 @@
+comandos en GHCI 
+ctrl + L = Clear
+even = Funcion Par o Not.
+odd = impar
+:type = metodo comando, nos sirve para saber el tipo de las funciones por ejemplo :type not, nos dira que es un tipo Booleano. Tambien podemos escribir :t en ves de :type
+:reload = recarga el codigo que ya hayas abierto sin tener que salir 
+:load cargamos el programa ej. :load programa.hs
